@@ -1,0 +1,41 @@
+.bgVido {
+  @apply w-full h-full absolute opacity-40;
+  &ContentVideo {
+    @apply absolute left-0 top-0 w-full h-full;
+    object-fit: cover;
+  }
+  &ContentImage {
+    @apply absolute w-full h-full top-0 left-0;
+    background: url(/src/assets/background-04.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+}
+
+.howToPlay {
+  background: url(../../assets/background-01.jpg) top no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.heroBg {
+  background: url("../../assets/background-02.jpg") no-repeat bottom;
+  background-size: cover;
+}
+
+.lastNext {
+  @apply w-[58.5px] h-[223px] absolute top-[55%] translate-y-[-50%] left-0 cursor-pointer z-[1];
+  background: url(../../assets/next.png) no-repeat;
+  background-position: 0 0;
+}
+
+.next {
+  @apply w-[58.5px] h-[223px] absolute top-[55%] translate-y-[-50%] right-0 cursor-pointer z-[1];
+  background: url(../../assets/next.png) no-repeat;
+  background-position: -58.5px 0;
+}
+
+.heroTitleBg {
+  background: url("../../assets/heroTitleBg.png") no-repeat;
+  background-size: 100% 100%;
+}

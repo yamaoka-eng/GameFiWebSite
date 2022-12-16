@@ -1,0 +1,24 @@
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+  width: 100%!important;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+  align-items: flex-end;
+}
+
+.swiper-slide {
+  @apply w-[60%] md:w-[25%] h-[60%] md:h-[63%] z-0;
+  flex-shrink: 0;
+  position: relative;
+  transition-property: transform;
+}
