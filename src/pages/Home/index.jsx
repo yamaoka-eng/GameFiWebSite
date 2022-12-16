@@ -151,7 +151,7 @@ const Hero = () => {
       className={`${styles.heroBg} w-full aspect-[1/2] md:aspect-[1/0.5] flex flex-col relative overflow-hidden`}
     >
       <div
-        className={`${styles.heroTitleBg} pixelFont px-20 py-8 text-xl md:text-2xl absolute left-[50%] translate-x-[-50%] top-5 xl:top-14 text-black font-semibold`}
+        className={`${styles.heroTitleBg} pixelFont px-20 py-8 text-xl md:text-2xl absolute left-[50%] translate-x-[-50%] top-14 md:top-5 xl:top-14 text-black font-semibold`}
       >
         HERO
       </div>
