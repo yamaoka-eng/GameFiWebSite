@@ -1,8 +1,8 @@
 import { getLocalImage } from "../../utils"
 
 const Index = () => {
-  return <div>
-  </div>
+  return <canvas>
+  </canvas>
 }
 
 export default Index
