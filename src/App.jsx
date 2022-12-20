@@ -11,18 +11,22 @@ const GameWiki = () => import("./pages/GameWiki")
 function App() {
   return (
     <div className="App">
-      <Header />
-      <div className="">
-        <Routes>
-          <Route path="/" element={lazyLoad(Home)} />
-          <Route path="/game" element={lazyLoad(Game)} />
-          <Route path="/market" element={lazyLoad(Market)} />
-          <Route path="/gamewiki" element={lazyLoad(GameWiki)} />
-        </Routes>
-      </div>
-      <Footer />
+      <Routes>
+        <Route path="/*" element={<Main/>}/>
+        <Route path="/game" element={lazyLoad(Game)} />
+      </Routes>
     </div>
   )
 }
+
+const Main = () => <>
+  <Header />
+  <Routes>
+    <Route index element={lazyLoad(Home)} />
+    <Route path="/market" element={lazyLoad(Market)} />
+    <Route path="/gamewiki" element={lazyLoad(GameWiki)} />
+  </Routes>
+  <Footer />
+</>
 
 export default App
